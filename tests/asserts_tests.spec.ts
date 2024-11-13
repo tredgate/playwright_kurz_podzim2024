@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("toContainText Test", async ({ page }) => {
+test("toContainText Test @githubactions", async ({ page }) => {
   // ? Přihlášení do PMTool
   await page.goto("https://tredgate.com/pmtool/");
   await page.locator("#username").fill("pw_skoleni");
@@ -12,7 +12,7 @@ test("toContainText Test", async ({ page }) => {
   ); // ? Pokud vynecháme await před expect(), pak Playwright nečeká na zobrazení či na stav
 });
 
-test("toHaveText Test", async ({ page }) => {
+test("toHaveText Test @githubactions", async ({ page }) => {
   // ? Přihlášení do PMTool
   await page.goto("https://tredgate.com/pmtool/");
   await page.locator("#username").fill("pw_skoleni");
